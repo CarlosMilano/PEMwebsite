@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav.menu {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5px;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-button.active {
+  color: #3d66ab;
+}
+
+.line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #3d66ab;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.menu-button.active .line {
+  transform: scaleX(1);
+}
+
+main {
+  margin-top: 90px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 1px;
+  text-align: center;
+}
+.subtitulos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitulo {
+  margin-bottom: 20px;
+}
+
+.subtitulo h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.subtitulo p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.blue{
+  color: #3d66ab;
+}
+
+#nosotros {
+  background-color: #3d66ab;
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#cobertura {
+  /*background-image: url("./assets/Cober.jpg");*/
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#servicio {
+  background-color: #3d66ab;
+  color: white;
+  padding: 20px;
+  height: 300px;
+}
+
+#personal {
+  height: 300px;
+}
+
+#ventajas {
+  background-color: #3d66ab;
+  color: white;
+  padding: 20px;
+  height: 350px;
+}
+
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  .menu-buttons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-button {
+    margin: 0 10px;
   }
 }
