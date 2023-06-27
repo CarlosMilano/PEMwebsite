@@ -33,7 +33,7 @@ nav.menu {
   padding: 5px 10px;
   cursor: pointer;
   position: relative;
-  color: #333;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -61,33 +61,53 @@ main {
   margin-top: 90px;
 }
 
-section {
-  margin-bottom: 50px;
-}
-
 h2 {
   margin-bottom: 1px;
   text-align: center;
 }
-.subtitulos {
+.subtitulo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: #ffffff;
+  text-align: left;
+  align-items: center;
 }
 
-.subtitulo {
-  margin-bottom: 20px;
+.circulo {
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	background-color: rgba(61, 102, 171, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin:0px auto;
+  padding:3%;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
-.subtitulo h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
+.rectangle {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(61, 102, 171, 0.7);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 60px;
+  border-radius: 15px;
+  text-align: center;
+
 }
 
-.subtitulo p {
-  font-size: 16px;
-  margin-bottom: 10px;
+.row-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+
 .title {
   font-size: 3em;
   font-weight: 700;
@@ -101,14 +121,23 @@ h2 {
   background-color: #3d66ab;
   color: white;
   padding: 20px;
+  height: 300px;
 }
 
-#cobertura {
-  /*background-image: url("./assets/Cober.jpg");*/
+#info {
+  background-image: url("./assets/Info.jpeg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  height: 300px;
+}
+
+#cobertura {
+  background-image: url("./assets/Cober.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 350px;
+  color: white;
 }
 
 #servicio {
@@ -128,7 +157,6 @@ h2 {
   padding: 20px;
   height: 350px;
 }
-
 
 /* Estilos para pantallas más grandes */
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import logo from "./assets/PEMlogo.png";
+import icon from "./assets/Correo.png"
 
 function App() {
   const [activeButton, setActiveButton] = useState('');
@@ -71,35 +72,43 @@ function App() {
           <p>
             Somos una empresa de Autotransporte que inicia sus operaciones en el año 2018, con el firme propósito de lograr la completa satisfacción de sus clientes, ofreciendo un servicio eficiente que solucione las necesidades de nuestros clientes, con el compromiso de siempre contar con la infraestructura necesaria para cumplir con los requerimientos de puntualidad y seguridad de sus cargas.
           </p>
-          <div className="subtitulos">
-            <div className="subtitulo">
+        </section>
+        <section id="info">
+        <div className="row-container">
+        <div className='circulo'>
+          <div className="subtitulo">
               <h3>Misión</h3>
               <p>
                 Ofrecer un servicio de autotransporte puntual, seguro y confiable. Mejorando continuamente mediante la aplicación de mejores prácticas y tecnologías, contribuyendo de esta manera en el éxito de nuestra empresa, de nuestros clientes y de nuestros colaboradores.
               </p>
             </div>
+          </div>
+            <div className='circulo'>
             <div className="subtitulo">
               <h3>Visión</h3>
               <p>
                 Ser la empresa líder de la región en el sector de autotransporte, que se distinga por su atención al cliente y por su constante esfuerzo para superar y cumplir con todos sus requerimientos y expectativas.
               </p>
             </div>
+            </div>
+            </div>
+            <div className='circulo'>
             <div className="subtitulo">
               <h3>Valores</h3>
               <p>
                 Honestidad<br />
-                <br />Lealtad<br />
-                <br />Actitud de servicio<br />
-                <br />Compromiso<br />
-                <br />Profesionalismo<br />
-                <br />Trabajo en equipo
+                Lealtad<br />
+                Actitud de servicio<br />
+                Compromiso<br />
+                Profesionalismo<br />
+                Trabajo en equipo
               </p>
             </div>
-          </div>
+            </div>
         </section>
         <section id="cobertura">
           <h2 className='title blue'>Cobertura</h2>
-          <p>
+          <p className='rectangle'>
           Se cuenta con presencia de equipo terrestre para movimientos nacionales, intra US, importación y exportación.
           </p>
         </section>
@@ -131,6 +140,12 @@ function App() {
         </section>
         <section id="contacto">
           <h2 className='title blue'>Contacto</h2>
+          <div className="row-container" style={{ alignItems: 'center' }}>
+            <img src={icon} alt='icon' width={50} height={50} />
+          <p style={{ marginLeft: '20px' }}>
+          ventas@pem-logistics.com
+          </p>
+          </div>
         </section>
       </main>
     </div>
