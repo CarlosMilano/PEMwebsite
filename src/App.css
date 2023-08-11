@@ -336,6 +336,10 @@ h2 {
     margin-top: 140px;
   }
 
+  #info {
+    background-attachment:scroll;
+  }
+
   #personal {
     padding-bottom: 95px;
     height: 350px;
