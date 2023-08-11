@@ -293,7 +293,7 @@ h2 {
   z-index: -1;
   background-size: cover;
   background-color: white;
-  padding-top: 35px;
+  padding-top: 15px;
   padding-bottom: 60px;
   height: 400px;
   color: white;
@@ -338,28 +338,34 @@ h2 {
 
   #info {
     background-attachment:scroll;
+    background-position: -750px center;
   }
 
   #personal {
-    padding-bottom: 95px;
+    padding-bottom: 110px;
     height: 350px;
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   #nosotros {
     height: 290px;
     padding-top: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
   }
 
   #cobertura{
     padding-top: 60px;
     padding-bottom: 0px;
+    background-attachment:scroll;
+    background-position: center bottom -10px;
   }
-  
   
   #servicio {
     padding-top: 60px;
+  }
+
+  #ventajas {
+    background-attachment: scroll;
   }
 
   .row-ventaja{

@@ -161,7 +161,7 @@ function App() {
               Unidades con GPS con Sistema de Bloqueo con monitoreo las 24 horas del dia.
             </p>
             <p className='rectangle-2'>
-              Unidades de reciente modelo (2017 o superior) que cuentan con mantenimiento
+              Unidades de reciente modelo que cuentan con mantenimiento
               continuo y preventivo.
             </p>
           </div>
